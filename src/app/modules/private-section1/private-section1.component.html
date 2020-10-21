@@ -1,4 +1,7 @@
 <h1>Le {{date | date}}</h1>
+<div *ngIf="eod_result.pagination.total==0">
+  <h1>Aucune donnée "End of Day" pour le {{date | date}}</h1>
+</div>
 <div *ngFor="let item of eod_result.data">
   <mat-card>
     <h1>Cours de cloture de {{item.name}} ( {{item.symbol}} ) sur le marché {{item.market}} :
