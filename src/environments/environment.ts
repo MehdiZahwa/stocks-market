@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api_url: 'http://api.marketstack.com/v1/',
+  access_key: '07e83a9a263911552293a94eaa031a37',
+  endOfDay_endPoint: 'eod',
 };
 
 /*

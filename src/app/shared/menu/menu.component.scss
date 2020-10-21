@@ -1,0 +1,41 @@
+$primary: rgb(230, 184, 0);
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: $primary;
+  padding: 1em 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  img.logo {
+    font-weight: bold;
+    max-width: 1vw;
+  }
+  nav {
+    float: right;
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      li a {
+        padding: 1em;
+
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+    }
+  }
+}
