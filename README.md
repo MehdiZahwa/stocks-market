@@ -1,10 +1,10 @@
 # StocksMarket
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
---
-Authentication account: 
-email: mail@example.com
-password: password
+
+Authentication account: <br/>
+email: mail@example.com <br/>
+password: password <br/>
 
 ## Development server
 
