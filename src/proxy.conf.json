@@ -1,0 +1,9 @@
+{
+  "/eod/*": {
+    "target": "http://api.marketstack.com/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": { "^/eod": "http://api.marketstack.com/v1/eod" }
+  }
+}
