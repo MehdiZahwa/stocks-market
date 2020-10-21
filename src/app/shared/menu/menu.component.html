@@ -9,7 +9,12 @@
         <li><a href="#" routerLink="/section-one">Private S1</a></li>
         <li><a href="#" routerLink="/section-two">Private S2</a></li>
         <li><a href="#" routerLink="/section-three">Private S3</a></li>
-
+        <span *ngIf="loggedIn" class="material-icons" (click)="logout()">
+          logout
+        </span>
+        <span *ngIf="!loggedIn" class="material-icons" (click)="openDialog()">
+          login
+        </span>
       </ul>
     </nav>
   </div>
