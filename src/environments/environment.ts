@@ -7,6 +7,7 @@ export const environment = {
   api_url: `${window.location.protocol}//${window.location.host}` + '/',
   access_key: '07e83a9a263911552293a94eaa031a37',
   endOfDay_endPoint: 'eod',
+  tickers_endPoint: 'tickers',
 };
 
 /*

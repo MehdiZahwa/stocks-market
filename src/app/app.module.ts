@@ -8,6 +8,7 @@ import { NoPageFoundComponent } from './shared/no-page-found/no-page-found.compo
 import { HomeModule } from './modules/home/home.module';
 import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     MenuComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HomeModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HomeModule, HttpClientModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

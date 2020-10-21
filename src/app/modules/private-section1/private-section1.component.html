@@ -1,1 +1,8 @@
-{{jsonResult.data[0].symbol}}
+<h1>Le {{date | date}}</h1>
+<div *ngFor="let item of eod_result.data">
+  <mat-card>
+    <h1>Cours de cloture de {{item.name}} ( {{item.symbol}} ) sur le marché {{item.market}} :
+      {{item.close | currency}}</h1>
+  </mat-card>
+  <br>
+</div>

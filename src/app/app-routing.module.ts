@@ -23,6 +23,8 @@ const routes: Routes = [
       },
     ],
   },
+  { path: 'section-two', loadChildren: () => import('./modules/private-section2/private-section2.module').then(m => m.PrivateSection2Module) },
+  { path: 'section-three', loadChildren: () => import('./modules/private-section3/private-section3.module').then(m => m.PrivateSection3Module) },
 
   {
     path: '**',

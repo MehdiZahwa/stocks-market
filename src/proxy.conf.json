@@ -5,5 +5,12 @@
     "changeOrigin": true,
     "logLevel": "debug",
     "pathRewrite": { "^/eod": "http://api.marketstack.com/v1/eod" }
+  },
+  "/tickers/*": {
+    "target": "http://api.marketstack.com/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": { "^/tickers": "http://api.marketstack.com/v1/tickers" }
   }
 }
