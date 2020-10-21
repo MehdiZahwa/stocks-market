@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EndOfDay } from 'src/app/models/end-of-day';
 import { Ticker } from 'src/app/models/ticker';
+import { AuthService } from 'src/app/services/authentication/auth.service';
 import { EndOfDayService } from 'src/app/services/end-of-day.service';
 import { TickersService } from 'src/app/services/tickers.service';
 
@@ -19,6 +20,7 @@ export class PrivateSection1Component implements OnInit {
   eod_result: EndOfDay;
 
   constructor(
+    private authService: AuthService,
     private endOfDay_api: EndOfDayService,
     private tickers_api: TickersService
   ) {}
@@ -60,5 +62,12 @@ export class PrivateSection1Component implements OnInit {
         console.log(result);
       });
     return result;
+  }
+
+  isIncreasing(open_price, close_price) {
+    if (close_price - open_price > 0) {
+      return true;
+    }
+    return false;
   }
 }
